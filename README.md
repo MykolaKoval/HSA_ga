@@ -23,7 +23,8 @@ export GA_API_SECRET={ga-api-key}
 ```
 
 <h3>GA configuration</h3>
-Property created with name = [hsa-app-ga](https://analytics.google.com/analytics/web/#/p452920695) and number = 452920695
+
+Property 452920695 created: [hsa-app-ga](https://analytics.google.com/analytics/web/#/p452920695)
 
 <h3>GA event report</h3>
 <img src="./images/currency_event_metric.png" width="300">
