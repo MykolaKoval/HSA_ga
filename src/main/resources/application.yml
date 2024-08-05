@@ -1,0 +1,36 @@
+logging:
+  level:
+    com.course.hsa.client.ga: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: health, metrics
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: basic
+
+scheduler:
+  ga:
+    publish-exchange-rate:
+      schedule: "0 0/5 * * * ?" # every 5 mins
+
+client:
+  nbu:
+    name: NbuClient
+    url: https://bank.gov.ua
+  ga:
+    name: GoogleAnalyticsClient
+    url: https://www.google-analytics.com
+    client-id: hsa-ga-worker
+    api-secret: ${GA_API_SECRET}
+    measurement-id: "G-HJJFKBT6VS"
