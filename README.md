@@ -16,6 +16,8 @@ Scheduler which periodically pushes every 5 mins custom event (``currency_event`
 Run system: <br/>
 ```
 export GA_API_SECRET={GA_API_KEY}
+```
+```
 ./gradlew bootRun
 ```
 
