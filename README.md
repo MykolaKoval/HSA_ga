@@ -15,7 +15,7 @@ https://ga-dev-tools.google/ga4/event-builder/
 Scheduler which periodically pushes every 5 mins custom event (``currency_event``) with UAH/USD currency exchange rate to GA. <br/>
 Run system: <br/>
 ```
-export GA_API_SECRET={GA_API_KEY}
+export GA_API_SECRET=<ga-api-key>
 ```
 ```
 ./gradlew bootRun
